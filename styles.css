@@ -1,0 +1,400 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(1, 85, 8);
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.logo-name {
+    font-size: 1.8rem;
+    font-family: "Georgia", serif;
+    font-weight: bold;
+    color: white;
+}
+
+.logo:hover .logo-img {
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.search-input {
+    padding: 8px;
+    width: 250px;
+    border: none;
+    outline: none;
+}
+
+.search-button {
+    background-color: rgb(248, 149, 0);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    padding: 5px;
+    border: none;
+    border-radius: 0; /* Remove rounding for attached look */
+    outline: none;
+}
+
+.search-input {
+    padding: 5px;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-radius: 0; /* Remove rounding for attached look */
+}
+
+.search-button {
+    background-color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: rgb(248, 149, 0);
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%); /* Change icon color to white */
+    transition: transform 0.3s ease;
+}
+
+.search-button:hover .search-icon {
+    transform: scale(1.2);
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.location a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.england-logo {
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+}
+
+.location a:hover .england-logo {
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.location-text {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.cart-logo {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+.nav-links i{
+    font-size:30px
+}
+.navbar {
+    background-color: #2b9b34a1;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+/* Main panel styling */
+.main-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+    background-color: rgb(5, 95, 17);
+    color: white;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+/* Individual items in the main panel */
+.div-item {
+    margin: 0 10px;
+}
+
+/* "All" section with menu icon */
+.div-item:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+/* Ensure the last div item is aligned to the far right */
+.div-item:last-child {
+    margin-left: auto;
+}
+.div-item1{
+    font-size:0.9rem;
+    font-weight:700;
+}
+.herosection{
+    background-image:url("heroimage.jpg");
+    height: 380px;
+    background-size:cover;
+
+
+}
+
+.heromsg {
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Change from fixed to absolute */
+    bottom: 250px; /* Distance from the bottom */
+    left: 50%; /* Position at the center horizontally */
+    transform: translateX(-50%); /* Adjust horizontal centering */
+    padding: 0 20px; /* Optional padding for better spacing */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    z-index: 100; /* Ensure it's above other content */
+}
+
+
+   /* Shop section styling */
+.shop_section {
+    display: flex; /* Arrange boxes horizontally */
+    justify-content: space-evenly; /* Space boxes evenly */
+    background-color: #e2e7e6; /* Light greenish background color */
+    padding: 5px; /* Add padding for spacing */
+    gap: 5px; /* Add space between boxes */
+    flex-wrap: wrap;
+
+}
+
+/* Box styling */
+.box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 250px;
+    text-align: center;
+}
+
+/* Specific content box */
+.box h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.show-more {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.show-more:hover {
+    background-color: #007bff;
+    color: white;
+}
+.box2 {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 250px;
+    text-align: center;
+}
+
+/* Specific content box */
+.box2 h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.box2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.show-more {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.show-more:hover {
+    background-color: #007bff;
+    color: white;
+}
+.footer {
+    height: 50px; /* Set footer height */
+    background-color: rgba(43, 35, 109, 0.329); /* Background color */
+    display: flex; /* Flexbox layout for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: white; /* Font color */
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Add spacing above the footer if needed */
+}
+
+.back-to-top {
+    cursor: pointer; /* Change cursor to pointer for interactivity */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Optional: make text bold */
+}.footer2 {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-lists {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.footer-list li {
+    margin: 10px 0;
+}
+
+.footer-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-list a:hover {
+    text-decoration: underline;
+}
+
+
+.footer-heading {
+    font-weight: bold; /* Make "Get to Know Us" bold */
+    font-size: 18px; /* Adjust font size */
+    margin-bottom: 10px; /* Add spacing below the heading */
+}
+
+.footer-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.footer-list li {
+    margin: 5px 0; /* Add spacing between list items */
+}
+
+.footer-list a {
+    color: white; /* Anchor text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Adjust font size */
+}
+
+.footer-list a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
